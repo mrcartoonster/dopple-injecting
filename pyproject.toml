@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "doppler-injector"
+version = "0.1.0"
+description = ""
+authors = ["Evan Baird <evanbaird@evans-mbp.lan>"]
+readme = "README.md"
+packages = [{include = "doppler_injector", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-box = "^7.1.1"
+doppler-env = "^0.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-instafail = "^0.5.0"
+pytest-emoji = "^0.2.0"
+logtail-python = "^0.2.10"
+bpython = "^0.24"
+watchdog = "^3.0.0"
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
